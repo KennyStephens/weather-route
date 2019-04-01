@@ -5,7 +5,7 @@ exports.getForecast = (req, res, next) => {
   .then(res => res.json())
   .then(result => {
     console.log(result);
-    return result;
+    res.send(result);
   })
   .catch(err => console.log(err));
 }

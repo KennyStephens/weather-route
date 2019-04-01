@@ -12,7 +12,7 @@ const fetch = require("node-fetch");
 
 exports.getForecast = (req, res, next) => {
   fetch(
-    "https://api.opencagedata.com/geocode/v1/json?q=Astoria&key=8fc46226f4374af39d7c94dd39337768"
+    "https://api.opencagedata.com/geocode/v1/json?q=murray&key=8fc46226f4374af39d7c94dd39337768"
   )
     .then(res => res.json())
     .then(data => {
